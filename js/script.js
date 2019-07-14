@@ -1,27 +1,19 @@
 "use strict"
-//Task-2;
-function creatNum(x, y){
-if(x<0 && y<0){
- x= -x;
- y= -y;
-}
+// Task-3
 
-else if(x<0 || y<0){
-x= x + 0.5;
-y= y + 0.5
-}
-
-else if((x>0 && y>0) && !((0.5 <=x && x<= 2) && (0.5 <= y && y<= 2))) {
-x= x / 10;
-y= y / 10;
-}
-
-
-console.log(x,y);
-
-}
-
-(creatNum(-5,3));
-(creatNum(5,-3));
-(creatNum(0.1,3))
-//Task-2 end;
+function inputNumber(x, y){
+    y > x
+    for(let i = x; i < y; i++){
+        if(i % 2 == 0){
+    console.log(i);
+     }
+    
+    }
+    let amount = 0;
+    for( let c = x; c < y; c++ ){
+        amount = amount + c;
+    }
+    console.log(amount);
+    
+    }
+    inputNumber( 0, 6);  
